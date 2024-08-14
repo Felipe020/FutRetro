@@ -4,13 +4,13 @@ import { Facebook, Instagram, Linkedin } from "lucide-react"
 
 export default function Footer(){
     return(
-        <div className="flex flex-wrap mx-auto bg-[#911F27] text-center w-full mt-24 py-8 min-h[250px] items-start justify-between">
+        <div className="flex flex-wrap mx-auto bg-[#911F27] text-center w-full py-8 min-h[250px] items-start justify-between">
             <div className="px-8 flex flex-col text-[#F2EBD5] items-start">
-                <p className="text-2xl underline">Sobre nós</p>
+                <p className="text-3xl underline mb-1">Sobre nós</p>
                 <div className="flex flex-col items-start ">
-                    <Link href="/" target="_blank" > Visão </Link>
-                    <Link href="/" target="_blank"> Missão </Link>   
-                    <Link href="/" target="_blank"> Valores </Link> 
+                    <Link href="/" target="_blank" className="text-2xl"> Visão </Link>
+                    <Link href="/" target="_blank" className="text-2xl"> Missão </Link>   
+                    <Link href="/" target="_blank" className="text-2xl"> Valores </Link> 
                 </div>   
             </div>
             <div className="flex items-center justify-center px-8">
@@ -23,11 +23,11 @@ export default function Footer(){
                 />
             </div>
             <div className="flex flex-col px-8 justify-start">
-                <p className="text-[#F2EBD5] text-2xl underline flex items-end">Redes Sociais</p>
+                <p className="text-[#F2EBD5] text-3xl underline mb-1 flex items-end">Redes Sociais</p>
                 <div className="flex flex-wrap gap-4">
-                    <Link href="/"><Instagram className="text-[#F2EBD5]"/></Link>
-                    <Link href='/'><Linkedin className="text-[#F2EBD5]"/></Link>
-                    <Link href='/'><Facebook className="text-[#F2EBD5]"/></Link>  
+                    <Link href="/"><Instagram size={40} className="text-[#F2EBD5]"/></Link>
+                    <Link href='/'><Linkedin size={40} className="text-[#F2EBD5]"/></Link>
+                    <Link href='/'><Facebook size={40} className="text-[#F2EBD5]"/></Link>  
                 </div>
                 
             </div>

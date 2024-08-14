@@ -10,7 +10,7 @@ export default function Search(){
                         id="search"
                         name="search"
                         type="text"
-                        className="w-full rounded-xl px-16 py-6 text-white bg-zinc-900 hover:bg-zinc-800 caret-white transition-all duration-300"
+                        className="w-full rounded-xl px-16 py-6 text-black bg-[#F2EBD5] hover:bg-[#F2EBD5]/50 caret-black transition-all duration-300"
                         placeholder="Faça sua busca!"
                     />
                 </div>

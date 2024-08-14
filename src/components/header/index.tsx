@@ -33,7 +33,7 @@ export default function Header() {
     }
 
     return (
-      <header className="bg-[#911F27] sticky top-0 z-20 mx-auto w-full py-0 px-4 md:p-0 mb-8">
+      <header className="bg-[#911F27] sticky top-0 z-20 mx-auto w-full py-0 px-4 md:p-0 ">
         <div className="flex flex-wrap items-center justify-between w-full md:w-10/12 mx-auto">
           <Link href="/" className="flex gap-4 items-center">
             <Image
@@ -49,7 +49,7 @@ export default function Header() {
               
               {links.map((link, index) => (
                 <Link href="link, index" key={index}>
-                  <span className="text-2xl text-[#F2EBD5] hover:bg-white/20 p-2 rounded-2xl">
+                  <span className="text-3xl text-[#F2EBD5] hover:bg-white/20 p-2 rounded-2xl">
                     {link.label}
                   </span>
                 </Link>
