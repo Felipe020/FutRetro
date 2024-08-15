@@ -5,7 +5,7 @@ import React, { ReactNode } from 'react';
 
 interface CarouselProps {
     children: ReactNode[]; 
-  }
+}
 
 export default function Carousel({children: slides}: CarouselProps){
     const [curr, setCurr] = useState(0)

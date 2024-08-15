@@ -41,11 +41,17 @@ export default function LandingPage(){
                     </div>
                 </div>
             </div>
-            <div className="lg:col-span-3 relative overflow-hidden">
+            <div className="lg:col-span-3">
                 <div>
                     <Carousel>
                         {slides.map((s, index) => (
-                            <Image key={index} src={s} alt={`image-${index}`}   width={1920} height={1080}/>
+                            <Image 
+                                key={index} 
+                                src={s} 
+                                alt={`image-${index}`}   
+                                width={1920} 
+                                height={1080}
+                            />
                         ))}
                     </Carousel>
                 </div>   
