@@ -13,7 +13,7 @@ const slides = [
 
 export default function LandingPage() {
   return (
-    <div className="w-full h-full flex flex-col items-center gap-6 bg-[url('/bg/maraca.png')]">
+    <div className="w-full h-full flex flex-col items-center justify-center gap-6 bg-[url('/bg/maraca.png')] min-h-screen">
       <div className="flex flex-col justify-center gap-12 p-4 h-full overflow-hidden items-center ">
         <div className="flex flex-col gap-6 leading-relaxed">
           <h1 className="text-[#F2EBD5] text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl font-bold uppercase text-center">
