@@ -1,15 +1,4 @@
 import { Send, Plane } from "lucide-react";
-import Link from "next/link";
-import Image from "next/image";
-
-const slides = [
-  "/camisas/milan.png",
-  "/camisas/flu.png",
-  "/camisas/br2.webp",
-  "/camisas/br2.webp",
-  "/camisas/br2.webp",
-  "/camisas/br2.webp",
-];
 
 export default function LandingPage() {
   return (
