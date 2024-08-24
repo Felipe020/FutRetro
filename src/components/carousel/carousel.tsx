@@ -58,13 +58,13 @@ export default function Carousel({ children }: CarouselProps) {
       </div>
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"
+        className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md md:ml-5"
       >
         <ArrowLeft className="text-[#911F27]" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"
+        className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md md:mr-5"
       >
         <ArrowRight className="text-[#911F27]" />
       </button>
