@@ -4,7 +4,7 @@ import Carousel from "../carousel/carousel";
 
 export default function CollectionSection() {
   return (
-    <section className="bg-red-900 flex flex-1 flex-row flex-wrap justify-center items-center mx-auto min-h-screen lg:flex-row lg:flex-nowrap h-full w-full">
+    <section className="bg-red-900 flex flex-1 flex-row flex-wrap justify-center items-center m-auto min-h-screen lg:flex-row lg:flex-nowrap h-full w-full">
       <Carousel>
         <CardImageCollection
           imageSrc="/camisas/flu.png"

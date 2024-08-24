@@ -18,8 +18,6 @@ export default function Carousel({ children }: CarouselProps) {
   ? 1
   : isMediumScreen
   ? 2
-  : isMoreLargeScreen
-  ? 4 
   : isLargeScreen
   ? 3
   : 0;
