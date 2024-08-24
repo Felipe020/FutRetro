@@ -1,10 +1,13 @@
 import Image from "next/image";
 import CardImageCollection from "../cardImageCollection";
 import Carousel from "../carousel/carousel";
+import Title from "../title";
 
 export default function CollectionSection() {
   return (
-    <section className="bg-red-900 flex flex-1 flex-row flex-wrap justify-center items-center m-auto min-h-screen lg:flex-row lg:flex-nowrap h-full w-full">
+    <div className="w-full bg-red-900 h-full m-auto md:py-[20px]">
+      <Title title="Alguns das nossas melhores camisas" subtitle="Produtos" />
+      <section className=" flex flex-1 flex-row flex-wrap justify-center items-center m-auto lg:flex-row lg:flex-nowrap ">
       <Carousel>
         <CardImageCollection
           imageSrc="/camisas/flu.png"
@@ -38,5 +41,7 @@ export default function CollectionSection() {
         />
       </Carousel>
     </section>
+    </div>
+    
   );
 }

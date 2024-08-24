@@ -28,7 +28,7 @@ export default function KnowFutRetro() {
   return (
     <div className="w-full space-y-12 bg-red-900 h-full">
       <div>
-        <Title title="Conheça a Summit" subtitle="Sobre" />
+        <Title title="Conheça nossas bases" subtitle="Sobre" />
         <div className="flex flex-wrap gap-4 justify-center">
             {(cards.map((card) => (
                 <KnowFutRetroCard 
