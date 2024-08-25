@@ -29,7 +29,7 @@ export default function KnowFutRetro() {
     <div className="w-full space-y-12 bg-red-900 h-full">
       <div>
         <Title title="Conheça nossas bases" subtitle="Sobre" />
-        <div className="flex flex-wrap gap-4 justify-center">
+        <div className="flex flex-wrap gap-4 justify-center py-5">
             {(cards.map((card) => (
                 <KnowFutRetroCard 
                     id={card.id} 
