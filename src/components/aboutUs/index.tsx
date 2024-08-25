@@ -8,7 +8,7 @@ export function AboutUs(){
                 alt = "logo"
                 width={904}
                 height={904}
-                className="xl:max-h-[550px] xl:max-w-[550px] 2xl:max-h-[650px] 2xl:max-w-[650px] 3xl:max-h-[750px] 3xl:max-w-[750px] object-cover overflow-hidden"
+                className="w-xl:max-h-[550px] xl:max-w-[550px] 2xl:max-h-[650px] 2xl:max-w-[650px] 3xl:max-h-[750px] 3xl:max-w-[750px] object-cover overflow-hidden"
                 />
                 <div className="flex flex-col flex-grow justify-center gap-8 p-4 w-4/12">
                     <div className="flex flex-col gap-2">

@@ -3,6 +3,7 @@ import LandingPage from "@/components/landingPage";
 import CollectionSection from "@/components/collectionSection";
 import KnowFutRetro from "@/components/knowFutRetro";
 import { AboutUs } from "@/components/aboutUs";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return ( 
@@ -11,6 +12,7 @@ export default function Home() {
       <CollectionSection/>
       <KnowFutRetro/>
       <AboutUs />
+      <Contact />
     </div>
   );
 }

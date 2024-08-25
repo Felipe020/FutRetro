@@ -5,7 +5,7 @@ import Title from "../title";
 
 export default function CollectionSection() {
   return (
-    <div className="w-full bg-red-900 h-full m-auto md:py-[20px]">
+    <div className="w-full lg:w-10/12 bg-red-900 h-full m-auto md:py-[20px]">
       <Title title="Alguns das nossas melhores camisas" subtitle="Produtos" />
       <section className=" flex flex-1 flex-row flex-wrap justify-center items-center m-auto lg:flex-row lg:flex-nowrap ">
       <Carousel>
