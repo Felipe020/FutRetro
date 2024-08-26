@@ -4,7 +4,7 @@ import { Facebook, Instagram, Linkedin } from "lucide-react"
 
 export default function Footer(){
     return(
-        <div className="flex flex-wrap mx-auto bg-[#911F27] text-center w-full py-8 min-h[250px] items-start justify-between">
+        <div className="flex flex-col lg:flex-row mx-auto bg-[#911F27] text-center w-full py-8 min-h[250px] items-center lg:items-start justify-between">
             <div className="px-8 flex flex-col text-[#F2EBD5] items-start">
                 <p className="text-3xl underline mb-1">Sobre nós</p>
                 <div className="flex flex-col items-start ">
