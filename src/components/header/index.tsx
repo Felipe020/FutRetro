@@ -48,7 +48,7 @@ export default function Header() {
             <div className="hidden w-full md:flex justify-end items-center gap-8">
               
               {links.map((link, index) => (
-                <Link href="link, index" key={index}>
+                <Link href={link.href} key={index}>
                   <span className="text-3xl text-[#F2EBD5] hover:bg-white/20 p-2 rounded-2xl">
                     {link.label}
                   </span>
