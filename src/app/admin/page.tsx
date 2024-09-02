@@ -1,9 +1,7 @@
-import AdminSidebar from "@/components/admin-sidebar";
-
 export default function Page(){
     return(
         <div>
-            <AdminSidebar/>
+            <h1>admin</h1>
         </div>
     )
 }
