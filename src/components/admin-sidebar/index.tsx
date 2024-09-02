@@ -7,9 +7,7 @@ import { useState } from "react";
 
 const LinksSidebar = [
   { href: "/admin", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/admin/manage/categories", label: "Categorias", icon: LayoutDashboard },
-  { href: "/admin/manage/localizations", label: "Localizações", icon: LayoutDashboard },
-  { href: "/admin/manage/produtos", label: "Produtos", icon: ScrollText },
+  { href: "/produtos", label: "Produtos", icon: ScrollText },
   { href: "/", label: "Página inicial", icon: Home },
 ];
 
