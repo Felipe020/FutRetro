@@ -5,7 +5,7 @@ export default function DashboardPage() {
         <div>
             <div className="flex flex-col sm:flex-row sm:flex-wrap gap-8 w-full mt-10">
                 <DashboardCard title="Produtos" description="Gerenciar" href="/admin/manage/products"/>
-                <DashboardCard title="Posts" description="Gerenciar" href="/admin/manage/posts"/>
+                <DashboardCard title="Usuários" description="Gerenciar" href="/admin/manage/users"/>
             </div>
         </div>
     )
