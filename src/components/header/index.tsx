@@ -8,7 +8,7 @@ import Search from "../search";
 import { Search as SearchIcon } from "lucide-react";
 
 const links = [
-    { href: "/home" , label: "Home" },
+    { href: "/" , label: "Home" },
     { href: "/produtos", label: "Produtos" },
     { href: "/contato", label: "Contatos" },
     { href: "/admin", label: "Gerenciamento" },
