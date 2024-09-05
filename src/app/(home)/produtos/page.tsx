@@ -1,4 +1,4 @@
-import PostPage from "@/components/posts-page";
+import PostPage from "@/components/product-page";
 
 export default function Page(){
     return(

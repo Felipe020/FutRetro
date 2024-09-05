@@ -1,6 +1,6 @@
 import Link from "next/link";
 import SecondarySearch from "./secondary-search";
-import PostCard from "../post-card";
+import PostCard from "../product-card";
 
 export default function SearchPage(){
     const count = 0;

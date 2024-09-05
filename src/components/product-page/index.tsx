@@ -1,4 +1,4 @@
-import PostCard from "../post-card";
+import PostCard from "../product-card";
 
 export default function PostPage(){
     return(
