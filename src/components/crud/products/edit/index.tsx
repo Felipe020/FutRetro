@@ -27,6 +27,14 @@ export default function EditProduct(){
                     name="create-product"
                     defaultValue={Val}
                     />
+
+                    <label className="text-[#F2EBD5]">Imagem</label>
+                    <input 
+                    type="file"
+                    name="imagem" 
+                    accept="image/*"
+                    className="border-2 p-2 rounded-md bg-[#F2EBD5]" 
+                    />
                 </div>
                 <div className="w-full flex justify-end">
                     <button className="w-full lg:w-6/12 xl:w-3/12 bg-[#F2EBD5] hover:bg-[#F2EBD5]/70 text-[#911F27] rounded-md px-6 py-2">
