@@ -1,6 +1,6 @@
 export default function Contact(){
     return(
-        <div className="w-full lg:w-10/12 lg:m-auto flex flex-wrap justify-center shadow-2xl py-8 px-4 gap-6">
+        <div className="w-full lg:w-10/12 lg:m-auto flex flex-wrap justify-center shadow-2xl py-16 px-4 gap-6">
             <div className="flex flex-col flex-grow justify-center p-4 gap-16 w-4/12">
                 <div className="flex flex-col gap-2">
                     <h1 className="text-[#F2EBD5] text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl font-bold">
