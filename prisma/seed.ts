@@ -5,20 +5,20 @@ const prisma = new PrismaClient();
 async function main() {
   const products = [
     {
-      title: 'Wireless Mouse',
-      description: 'A smooth and responsive wireless mouse.',
-      price: 29.99,
+      title: 'Camisa Brasil',
+      description: 'Bom estado de conservação.',
+      price: 300.00,
       createdAt: new Date(),
     },
     {
-      title: 'Mechanical Keyboard',
-      description: 'A durable mechanical keyboard with RGB lighting.',
-      price: 89.99,
+      title: 'Camisa Fluminense',
+      description: 'Excelente estado de conservação.',
+      price: 450.00,
       createdAt: new Date(),
     },
     {
-      title: 'Noise Cancelling Headphones',
-      description: 'Comfortable headphones with active noise cancelling.',
+      title: 'Camisa Milan',
+      description: 'Usada algumas vezes.',
       price: 199.99,
       createdAt: new Date(),
     },
