@@ -6,8 +6,8 @@ import { Product } from "../../../types/data";
 export default function ProductCard({product}: {product: Product}){
     return(
         <Link
-        href={'/'}
-        className="w-full lg:w-10/12 flex flex-col lg:flex-row group gap-20 justify-center py-10 items-center"
+        href={`/product/${product.id}`}
+        className="flex flex-col lg:flex-row group gap-20 justify-center py-10 items-center"
         >
             <div className="flex flex-col text-[#F2EBD5] shadow-lg rounded-xl group-hover:shadow-xl duration-300 overflow-hidden bg-[#911F27]">
                 <Image 

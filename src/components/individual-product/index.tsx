@@ -1,4 +1,4 @@
-import { ShoppingCart } from "lucide-react";
+import { CircleDollarSign, ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import type { IndividualProduct } from "../../../types/data";
 
@@ -22,9 +22,12 @@ export default function IndividualProduct({product}: {product: IndividualProduct
                     <h2 className="text-xl md:text-2xl 2xl:text-3xl 3xl:text-4xl line-clamp-2">
                         {product?.description}
                     </h2>
-                    <h2>
-                        ${product?.price}
-                    </h2>
+                    <div className="flex flex-wrap items-center gap-4">
+                            <div className="flex items-center gap-1 text-lime-600">
+                                <CircleDollarSign className="h-5 w-5"/>
+                                <span className="text-base 2xl:text-xl 3xl:text-2xl font-semibold">{product?.price}</span>
+                            </div>
+                        </div>
                     <button className="bg-[#F2EBD5] px-6 py-4 rounded-xl text-[#911F27] font-bold text-xl hover:bg-[#F2EBD5]/70 items-center flex flex-row gap-2 ">
                         <ShoppingCart/>
                         Comprar
