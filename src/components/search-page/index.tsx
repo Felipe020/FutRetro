@@ -2,8 +2,9 @@ import Link from "next/link";
 import SecondarySearch from "./secondary-search";
 import PostCard from "../product-card";
 import { Product } from "../../../types/data";
+import Pagination from "../pagination";
 
-export default function SearchPage({products, count}: {products: Product[], count: number}){
+export default function SearchPage({products, count, totalPages}: {products: Product[], count: number, totalPages: number}){
     return(
         <div className="w-full">
             <SecondarySearch count={count}/>
@@ -21,6 +22,9 @@ export default function SearchPage({products, count}: {products: Product[], coun
                     {products.map((product, index) => (
                         <PostCard key={index} product={product}/>
                     ))}
+                    {totalPages > 1 && (
+                        <Pagination totalPages={totalPages}/>
+                    )}
                 </div>
             )}
         </div>

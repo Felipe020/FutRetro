@@ -13,12 +13,12 @@ export default async function Page({
     const query = searchParams?.query || ''
     const currentPage = Number(searchParams?.page) || 1
 
-    const {products, count} = await fetchFilteredProducts(query, currentPage)
+    const {products, count, totalPages} = await fetchFilteredProducts(query, currentPage)
     
 
     return(
         <div className="w-full min-h-screen bg-red-900">
-            <SearchPage count={count} products={products}/>
+            <SearchPage count={count} products={products} totalPages={totalPages}/>
         </div>
     )
 }
