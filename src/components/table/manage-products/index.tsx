@@ -14,7 +14,7 @@ export default function ManageProductsTable({
     <div className="w-full p-4 border-2 rounded-md flex flex-col gap-4 mt-5">
       <div className="flex items-center w-full justify-between">
         <span className="text-base self-end text-[#F2EBD5]">
-          99 produtos encontrados...
+          {count} produtos encontrados.
         </span>
         <Link href={"/admin/manage/products/create"}>
           <button className="py-2 w-52 px-6 border-2 rounded-md text-[#F2EBD5] bg-[#911F27] transition-all hover:bg-[#911F27]/70">
