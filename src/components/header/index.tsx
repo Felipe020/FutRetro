@@ -3,9 +3,10 @@
 import { Menu,  X } from "lucide-react"
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Search from "../search";
 import { Search as SearchIcon } from "lucide-react";
+import { usePathname, useSearchParams } from "next/navigation";
 
 const links = [
     { href: "/" , label: "Home" },
@@ -19,6 +20,9 @@ export default function Header() {
     const [isNavOpen, setIsNavOpen] = useState(false);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
 
+    const pathname = usePathname()
+    const searchParams = useSearchParams()
+
     {/*ALTERNA O ESTADO DA NAVBAR*/}
     const toggleNav = () => setIsNavOpen(!isNavOpen);
     const toggleSearch = () => setIsSearchOpen(!isSearchOpen);
@@ -30,6 +34,11 @@ export default function Header() {
             toggleNav();
         }
     }
+
+    useEffect(() => {
+      setIsSearchOpen(false)
+      setIsNavOpen(false)
+    }, [pathname, searchParams])
 
     return (
       <header className="bg-[#911F27] sticky top-0 z-20 mx-auto w-full py-0 px-4 md:p-0 ">
