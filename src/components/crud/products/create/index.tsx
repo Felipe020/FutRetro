@@ -1,25 +1,27 @@
+import { createCategory } from "../../../../../actions/admin/products/actions";
+
 export default function CreateProduct(){
     return(
         <div className="w-full lg:w-9/12 xl:w-7/12 2xl:w-5/12 p-4 border-2 rounded-md flex flex-col gap-6 mt-10">
-            <form className="flex flex-col gap-4" autoComplete="off">
+            <form className="flex flex-col gap-4" autoComplete="off" action={createCategory}>
                 <div className="flex flex-col gap-1">
                     <label className="text-[#F2EBD5]">Título</label>
                     <input 
                     placeholder="Ex: Fluminense 2009" 
                     className="border-2 p-2 rounded-md bg-[#F2EBD5]" 
-                    name="create-product"
+                    name="title"
                     />
                     <label className="text-[#F2EBD5]">Descrição</label>
                     <input 
                     placeholder="Ex: ótimo estado de conservação" 
                     className="border-2 p-2 rounded-md bg-[#F2EBD5]" 
-                    name="create-product"
+                    name="description"
                     />
                     <label className="text-[#F2EBD5]">Preço</label>
                     <input 
                     placeholder="Ex: $299,00" 
                     className="border-2 p-2 rounded-md bg-[#F2EBD5]" 
-                    name="create-product"
+                    name="price"
                     />
 
                     <label className="text-[#F2EBD5]">Imagem</label>
