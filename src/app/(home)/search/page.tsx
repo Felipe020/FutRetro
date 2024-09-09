@@ -1,5 +1,6 @@
 import SearchPage from "@/components/search-page";
 import { fetchFilteredProducts } from "../../../../actions/search/actions";
+import { Suspense } from "react";
 
 export default async function Page({
     searchParams,
@@ -18,7 +19,9 @@ export default async function Page({
 
     return(
         <div className="w-full min-h-screen bg-red-900">
-            <SearchPage count={count} products={products} totalPages={totalPages}/>
+            <Suspense>
+                <SearchPage count={count} products={products} totalPages={totalPages}/>
+            </Suspense>
         </div>
     )
 }
