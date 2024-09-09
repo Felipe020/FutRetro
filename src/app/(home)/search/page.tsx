@@ -1,31 +1,24 @@
-import { Suspense } from 'react';
 import SearchPage from "@/components/search-page";
-import { fetchFilteredProducts } from '../../../../actions/search/actions';
+import { fetchFilteredProducts } from "../../../../actions/search/actions";
 
-export default function Page({
+export default async function Page({
     searchParams,
 }: {
     searchParams: {
         query?: string;
         page?: string;
     }
-}) {
-    const query = searchParams?.query || '';
-    const currentPage = Number(searchParams?.page) || 1;
+}){
 
-    return (
-        <Suspense fallback={<div>Loading...</div>}>
-            <SearchContent query={query} page={currentPage} />
-        </Suspense>
-    );
-}
+    const query = searchParams?.query || ''
+    const currentPage = Number(searchParams?.page) || 1
 
-async function SearchContent({ query, page }: { query: string, page: number }) {
-    const { products, count, totalPages } = await fetchFilteredProducts(query, page);
+    const {products, count, totalPages} = await fetchFilteredProducts(query, currentPage)
+    
 
-    return (
+    return(
         <div className="w-full min-h-screen bg-red-900">
-            <SearchPage count={count} products={products} totalPages={totalPages} />
+            <SearchPage count={count} products={products} totalPages={totalPages}/>
         </div>
-    );
+    )
 }
