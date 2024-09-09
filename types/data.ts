@@ -3,7 +3,7 @@ export type Product = {
     title?: string,
     description?: string | null,
     price?: number
-};
+} | null;
 
 export type IndividualProduct = {
     id?: number;
