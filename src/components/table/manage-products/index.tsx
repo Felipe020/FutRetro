@@ -45,7 +45,10 @@ export default function ManageProductsTable({
           </thead>
           <tbody>
             {products.map((product, index) => (
-              <tr key={index} className="bg-[#F2EBD5] border-[#911F27]  text-[#911F27] font-bold">
+              <tr
+                key={index}
+                className="bg-[#F2EBD5] border-[#911F27]  text-[#911F27] font-bold"
+              >
                 <th className="px-6 py-6">{product?.id}</th>
                 <th className="px-6 py-6">{product?.title}</th>
                 <th className="px-6 py-6">{product?.description}</th>

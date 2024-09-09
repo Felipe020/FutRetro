@@ -1,12 +1,20 @@
 import DashboardCard from "../dashboard-card";
 
 export default function DashboardPage() {
-    return(
-        <div>
-            <div className="flex flex-col sm:flex-row sm:flex-wrap gap-8 w-full mt-10">
-                <DashboardCard title="Produtos" description="Gerenciar" href="/admin/manage/products"/>
-                <DashboardCard title="Usuários" description="Gerenciar" href="/admin/manage/users"/>
-            </div>
-        </div>
-    )
+  return (
+    <div>
+      <div className="flex flex-col sm:flex-row sm:flex-wrap gap-8 w-full mt-10">
+        <DashboardCard
+          title="Produtos"
+          description="Gerenciar"
+          href="/admin/manage/products"
+        />
+        <DashboardCard
+          title="Usuários"
+          description="Gerenciar"
+          href="/admin/manage/users"
+        />
+      </div>
+    </div>
+  );
 }

@@ -6,13 +6,13 @@ import Contact from "@/components/contact";
 import getBestProducts from "../../../actions/home/actions";
 
 export default async function Home() {
-  const products = await getBestProducts()
+  const products = await getBestProducts();
 
-  return ( 
+  return (
     <div className="w-full h-full bg-red-900">
-      <LandingPage/>
-      <CollectionSection products={products}/>
-      <KnowFutRetro/>
+      <LandingPage />
+      <CollectionSection products={products} />
+      <KnowFutRetro />
       <AboutUs />
       <Contact />
     </div>

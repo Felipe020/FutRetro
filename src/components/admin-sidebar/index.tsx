@@ -55,7 +55,10 @@ export default function AdminSidebar() {
           <ul className="flex-1 space-y-8">
             {LinksSidebar.map(({ href, label, icon: Icon }, index) => (
               <li key={index}>
-                <Link href={href} className="flex items-center px-2 py-3 rounded-lg hover:bg-white/20">
+                <Link
+                  href={href}
+                  className="flex items-center px-2 py-3 rounded-lg hover:bg-white/20"
+                >
                   <Icon className="w-6 h-6 text-[#F2EBD5]" />
                   <span className="ml-3 text-xl text-[#F2EBD5]">{label}</span>
                 </Link>

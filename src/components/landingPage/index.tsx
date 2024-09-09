@@ -15,7 +15,10 @@ export default function LandingPage() {
           </p>
         </div>
 
-        <Link href="/produtos" className="w-full flex items-center justify-center gap-2">
+        <Link
+          href="/produtos"
+          className="w-full flex items-center justify-center gap-2"
+        >
           <button className="bg-[#911F27] w-full md:w-10/12 text-[#F2EBD5] px-6 py-2 rounded-xl md:text-lg lg:text-2xl xl:text-2xl duration-200 font-semibold hover:bg-red-800 flex items-center justify-center gap-2">
             <Send className="w-7 h-7 text-[#F2EBD5]" />
             Quero conhecer

@@ -15,12 +15,12 @@ export default function Carousel({ children }: CarouselProps) {
   const isSmallScreen = useMediaQuery({ maxWidth: 690 });
 
   const maxSlidesToShow = isSmallScreen
-  ? 1
-  : isMediumScreen
-  ? 2
-  : isLargeScreen
-  ? 3
-  : 0;
+    ? 1
+    : isMediumScreen
+    ? 2
+    : isLargeScreen
+    ? 3
+    : 0;
 
   const totalSlides = React.Children.count(children);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -33,9 +33,7 @@ export default function Carousel({ children }: CarouselProps) {
   };
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex >= indexMax ? 0 : prevIndex + 1
-    );
+    setCurrentIndex((prevIndex) => (prevIndex >= indexMax ? 0 : prevIndex + 1));
   };
 
   return (

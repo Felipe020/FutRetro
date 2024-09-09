@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { Search as SearchIcon } from "lucide-react";
 import { useSearchParams } from "next/navigation";
@@ -10,32 +10,34 @@ type SecondarySearchProps = {
 };
 
 export default function SecondarySearch({ count }: SecondarySearchProps) {
-  const searchParams = useSearchParams()
-  const router = useRouter()
-  const [secondarySearchTerm, setSecondarySearchTerm] = useState<string | ''>(searchParams.get('query') || '')
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const [secondarySearchTerm, setSecondarySearchTerm] = useState<string | "">(
+    searchParams.get("query") || ""
+  );
 
   const handleSearch = (query: string) => {
-      if(!query){
-          return 
-      }
+    if (!query) {
+      return;
+    }
 
-      const params = new URLSearchParams();
-      params.set('query', query)
-      router.replace(`/search/?${params.toString()}`)
-  }
-  
+    const params = new URLSearchParams();
+    params.set("query", query);
+    router.replace(`/search/?${params.toString()}`);
+  };
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-      e.preventDefault()
-      handleSearch(secondarySearchTerm)
-  }
+    e.preventDefault();
+    handleSearch(secondarySearchTerm);
+  };
 
   useEffect(() => {
-    setSecondarySearchTerm(searchParams.get('query') || '')
-  }, [searchParams])
+    setSecondarySearchTerm(searchParams.get("query") || "");
+  }, [searchParams]);
 
   return (
     <form
-      className="flex w-full  justify-center" 
+      className="flex w-full  justify-center"
       id="secondary-search"
       autoComplete="off"
       onSubmit={handleSubmit}
