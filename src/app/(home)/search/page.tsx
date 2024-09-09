@@ -5,8 +5,8 @@ export default async function Page({
     searchParams,
 }: {
     searchParams: {
-        query?: string;
-        page?: string;
+        query: string | null;
+        page: string | null;
     }
 }){
 
