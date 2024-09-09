@@ -32,6 +32,7 @@ export default function KnowFutRetro() {
         <div className="flex flex-wrap gap-4 justify-center py-5">
             {(cards.map((card) => (
                 <KnowFutRetroCard 
+                    key={card.id}
                     id={card.id} 
                     title={card.title} 
                     text={card.text} 
