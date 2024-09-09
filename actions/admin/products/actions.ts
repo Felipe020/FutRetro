@@ -38,7 +38,7 @@ export async function deleteProduct(id: number | undefined){
     revalidatePath("/admin/manage/products")
 }
 
-export async function createCategory(formData: FormData) {
+export async function createProduct(formData: FormData) {
     const title = formData.get("title") as string;
     const description = formData.get("description") as string;
     const priceString = formData.get("price") as string;

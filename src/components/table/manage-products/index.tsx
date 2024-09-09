@@ -18,7 +18,7 @@ export default function ManageProductsTable({
         </span>
         <Link href={"/admin/manage/products/create"}>
           <button className="py-2 w-52 px-6 border-2 rounded-md text-[#F2EBD5] bg-[#911F27] transition-all hover:bg-[#911F27]/70">
-            + Criar Categoria
+            + Adicionar Produto
           </button>
         </Link>
       </div>
