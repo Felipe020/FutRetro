@@ -1,5 +1,6 @@
 import PostPage from "@/components/product-page";
 import { fetchProducts } from "../../../../actions/products/actions";
+import { Suspense } from "react";
 
 export default async function Page({
     searchParams
@@ -14,7 +15,9 @@ export default async function Page({
 
     return(
         <div className="w-full min-h-screen bg-red-900">
-            <PostPage products={products} totalPages={totalPages}/>
+            <Suspense>
+                <PostPage products={products} totalPages={totalPages}/>
+            </Suspense>
         </div>
     )
 }

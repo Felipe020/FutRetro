@@ -1,5 +1,6 @@
 import IndividualProduct from "@/components/individual-product";
 import { fetchProductById } from "../../../../../actions/individualProduct/actions";
+import { Suspense } from "react";
 
 export default async function Page({params}: {params: {id: string}}){
     const id = parseInt(params.id, 10);
@@ -8,7 +9,9 @@ export default async function Page({params}: {params: {id: string}}){
 
     return(
         <div className="w-full  bg-red-900 p-10 md:p-0">
-            <IndividualProduct product={product}/>
+            <Suspense>
+                <IndividualProduct product={product}/>
+            </Suspense>
         </div>
     )
 }

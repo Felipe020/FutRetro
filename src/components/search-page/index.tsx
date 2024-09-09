@@ -16,10 +16,10 @@ export default function SearchPage({
 }) {
   return (
     <div className="w-full">
-        <Suspense>
+      <Suspense>
         <SecondarySearch count={count} />
-        </Suspense>
-      
+      </Suspense>
+
       {count === 0 ? (
         <div className="flex flex-col w-full md:w-10/12 gap-2  mx-auto">
           <span className="text-2xl font-extrabold text-[#F2EBD5]">
@@ -33,9 +33,7 @@ export default function SearchPage({
       ) : (
         <div className="w-full flex flex-col gap-12">
           {products.map((product, index) => (
-            <Suspense key={index}>
-              <PostCard product={product} />
-            </Suspense>
+            <PostCard product={product} key={index} />
           ))}
           {totalPages > 1 && <Pagination totalPages={totalPages} />}
         </div>
