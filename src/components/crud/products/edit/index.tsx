@@ -16,21 +16,21 @@ export default function EditProduct({ product }: { product: Product }) {
           <input
             className="border-2 p-2 rounded-md bg-[#F2EBD5]"
             name="title"
-            defaultValue={product?.title}
+            defaultValue={product?.title ?? ''}
           />
 
           <label className="text-[#F2EBD5]">Descrição</label>
           <input
             className="border-2 p-2 rounded-md bg-[#F2EBD5]"
             name="description"
-            defaultValue={product?.description}
+            defaultValue={product?.description ?? ''}
           />
 
           <label className="text-[#F2EBD5]">Preço</label>
           <input
             className="border-2 p-2 rounded-md bg-[#F2EBD5]"
             name="price"
-            defaultValue={product?.price}
+            defaultValue={product?.price ?? ''}
           />
 
           <label className="text-[#F2EBD5]">Imagem</label>
