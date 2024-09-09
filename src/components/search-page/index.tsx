@@ -16,7 +16,10 @@ export default function SearchPage({
 }) {
   return (
     <div className="w-full">
-      <SecondarySearch count={count} />
+        <Suspense>
+        <SecondarySearch count={count} />
+        </Suspense>
+      
       {count === 0 ? (
         <div className="flex flex-col w-full md:w-10/12 gap-2  mx-auto">
           <span className="text-2xl font-extrabold text-[#F2EBD5]">
